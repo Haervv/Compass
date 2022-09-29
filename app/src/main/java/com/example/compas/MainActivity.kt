@@ -49,9 +49,6 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
     override fun onAccuracyChanged(p0: Sensor?, p1: Int) {
 
-        val calibLow = SensorManager.SENSOR_STATUS_ACCURACY_LOW
-        val calibMed = SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM
-
         if (SensorManager.SENSOR_STATUS_ACCURACY_LOW==1) Toast.makeText(this,"Компас необходимо настроить",Toast.LENGTH_SHORT).show()
 
 
